@@ -1,21 +1,59 @@
 <!DOCTYPE HTML>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GarvinArt</title>
   <link rel="stylesheet" href="/assets/stylesheets/main.css">
 </head>
 <body>
-  <header>
-  <h1>GarvinArt</h1>
-</header>
+  <div class="row">
+  <div class='large-12 columns'>
+    <header>
+      <h1>GarvinArt</h1>
+    </header>
+  </div>
+</div>
+<div class="row">
+  <div class='large-12 columns'>
+		<div class="top-bar">
+			<div class="top-bar-left">
+				<ul class="dropdown menu" data-dropdown-menu>
+					<li class="menu-text">Site Title</li>
+					<li>
+						<a href="#">One</a>
+						<ul class="menu vertical">
+							<li><a href="#">One</a></li>
+							<li><a href="#">Two</a></li>
+							<li><a href="#">Three</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+				</ul>
+			</div>
+			<div class="top-bar-right">
+				<ul class="menu">
+					<li><input type="search" placeholder="Search"></li>
+					<li><button type="button" class="button">Search</button></li>
+				</ul>
+			</div>
+		</div>
+  </div>
+</div>
 
+  <div class= 'row' id='content'>
+    <div class='large-6 columns'></div>
+    <div class='large-6 columns'>
+      <h1>Test2</h1>
 
-  <div id='content'>
-    <h1>Test2</h1>
-
+    </div>
   </div>
   <footer>
   <small>&copy; 2017 Jonathan Garvin</small>
 </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/vendor/foundation.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/vendor/what-input.js"></script>
+  <script type="text/javascript" src="assets/javascripts/main.js"></script>
 </body>

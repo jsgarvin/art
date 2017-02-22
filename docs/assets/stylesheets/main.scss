@@ -2,4 +2,7 @@
 # Add import lines for each file in the _sass folder.
 ---
 
+@import "_vendor/foundation/foundation";
 @import "header_n_footer";
+
+@include foundation-everything;
