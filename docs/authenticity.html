@@ -1,0 +1,37 @@
+---
+layout: default
+title: Authenticity Protection
+---
+<div class='row'>
+  <div class='large-12 columns'>
+    <ul id='authenticity-tabs' class="tabs" data-tabs id="authenticity-tabs" data-deep-link="true" data-deep-link-smudge='true'>
+      <li class="tabs-title is-active"><a href="#_" aria-selected="true">What?</a></li>
+      <li class="tabs-title"><a href="#why">Why?</a></li>
+      <li class="tabs-title"><a href="#cryptographic-signatures">Cryptographic Signatures</a></li>
+      <li class="tabs-title"><a href="#git-repo">Git Repository</a></li>
+      <li class="tabs-title"><a href="#pigment-marks">Pigment Marks</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="tabs-content" data-tabs-content="authenticity-tabs">
+  <div class="tabs-panel is-active" id="_">
+    {% include authenticity/what.html %}
+  </div>
+</div>
+
+   
+<div class="tabs-content" data-tabs-content="authenticity-tabs">
+  <div class="tabs-panel" id="why">
+    {% include authenticity/why.html %}
+  </div>
+  <div class="tabs-panel" id="cryptographic-signatures">
+    {% include authenticity/crypto-sigs.html %}
+  </div>
+  <div class="tabs-panel" id="git-repo">
+    {% include authenticity/git-repo.html %}
+  </div>
+  <div class="tabs-panel" id="pigment-marks">
+    {% include authenticity/pigment-marks.html %}
+  </div>
+</div>

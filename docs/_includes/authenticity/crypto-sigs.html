@@ -1,0 +1,97 @@
+<div class='row'>
+  <div class='large-12 columns'><h3>Cryptographic Signatures</h3></div>
+</div>
+
+<div class='row'>
+  <div class='large-6 columns' id='crypto-sig'>
+    <p>For each of my limited edition prints, I create a description of the print,
+       including the title, year, size, serial number, materials used, etc. I then
+       sign that description with my private key and include the full description
+       and signature on the back of the print, in both a plain text human readable
+       form, and in a machine readable (i.e. your smart phone) QR code. Since each
+       print description contains information that is 100% unique to that specific
+       print (i.e. the serial number), the signature on each print is also 100%
+       unique to that print.<p> 
+
+       <p>My public key is
+       <a href='http://pgp.mit.edu/pks/lookup?op=get&search=0xD2DEC6AA316B5CDD'>
+       published for the world</a> on major public keys servers 
+       (fingerprint: ED97 F43E 1D86 6D62 31BB  04AD D2DE C6AA 316B 5CDD).
+       Any cryptography expert, and most cryptography hobbyists, should be capable
+       of taking my public key, and the QR code on the back of any of my prints, 
+       and verifying that the signature matches.</p>
+
+    <div class='large-12 columns'><h3>Wait.. what?</h3></div>
+
+    <p>It is beyond the scope of this article to explain the concept
+       of cryptographic signatures in depth, but I'll provide links
+       at the end to futher reading and tools for those that are interested.</p>
+
+    <p>For a grossly oversimplified analogy though, imagine a good old fashioned wax
+       seal. In the Middle Ages, aristocrates used wax seals to, among other things,
+       authenticate documents that they were signing. Everybody knew what Count
+       Geoffrey's seal looked like, so when you saw a document with his seal, you
+       could be reasonbly sure that Geoffery had signed it.</p>
+
+    <p>Cryptographic signatures work similarily, except through the power of
+       math and prime numbers. Wait! Stay with me, I'll try to keep this short.</p>
+
+    <p>In this case, the stamp (the thing you press into the wax) is a pair of
+       really, really, really, big prime numbers. This pair of numbers is called
+       the "private key." Count Geoffery randomly selects a pair of huge prime
+       numbers, and then he keeps these prime numbers (his private key) very, very
+       secret.</p>
+
+    <p>To sign (or stamp) a piece of text, Geoffery runs the text, and his private
+       key (the prime numbers),
+       through a specially crafted mathematical algorithm, and it spits out a
+       long stream of what appears to be random letters, numbers and other symbols,
+       which is called the "signature".
+       It's not at all random though, and as crazy as this sounds, only that text,
+       and those prime numbers can produce that particular signature.</p>
+
+    <p>In our analogy, that stream of characters (the signature) represents the wax,
+       stamped with Count Geoffery's stamp, on the back of a letter, and allowed to
+       harden.  Anybody that receives that text, with that signature, can verify,
+       with mathematically certainty, that Count Geoffery signed it.</p>
+
+    <p>"But how?" you ask. Well, in addition to Count Geoffery's private key (the
+        two prime numbers), he also has what's called a "public key", which is
+        simply the two prime numbers multiplied together. Imagine if Geoffery's
+        private key was the prime numbers 17 and 47 (these aren't nearly long
+        enough in reality, but bear with me). Geoffery's public key then would
+        be 17 x 47, or 799.</p>
+
+    <p>There's no known way to figure out what two prime numbers were multiplied
+       together to get 799, other than just trying all of the possibilities, which
+       is why, other than for simplified explanations like this, Count Geoffery
+       would want really, really, really big prime numbers. So, Count Geoffery
+       can safely broadcast his public key (799) to the whole world and know that
+       his private key (17 and 47) is safe and secure.</p>
+
+    <p>Finally, to verify that a letter of admiration, claiming to be from Count
+       Geoffery, is really from him, Princess Carisa merely needs to 
+       run the text, the signature, and Geoffery's public key (799) through another
+       specially crafted mathematical algorithm, and the algorithm is able to
+       verify (through the magic of math) that the prime numbers used to generate
+       the public key were also
+       used to generate the not-so-random signature. If the verification passes,
+       Carisa knows that Geoffery's letter is genuine. But if it fails,
+       then the Pricess knows that somebody else is trying to impersonate Geoffery.
+       </p>
+       
+    <p>Further reading for the mathematically masochistic;
+     <ul>
+       <li><a href="https://en.wikipedia.org/wiki/Public-key_cryptography">Public Key Cryptography</a></li>
+       <li><a href="https://math.berkeley.edu/~kpmann/encryption.pdf">The Science of Encryption</a></li>
+       <li><a href="https://gnupg.org/">The GNU Privacy Guard</a></li>
+     </ul>
+    </p>
+  </div>
+  <div class='large-6 columns' data-sticky-container>
+    <div class="sticky" data-sticky data-stick-to='top' data-anchor="crypto-sig" data-margin-top='5'>
+      <img src="/assets/images/crypto-back-sample1.png">
+      <img src="/assets/images/sample-wax-stamp.jpg">
+    </div>
+  </div>
+</div>

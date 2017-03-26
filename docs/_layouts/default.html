@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,17 +8,26 @@
   <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Italianno">
 </head>
-<body>
+<body class='default-layout'>
   {% include header.html %}
-  <div class= 'row' id='content'>
-    <div class='large-6 columns'></div>
-    <div class='large-6 columns'>
-      {{ content }}
+  <main>
+    <div class= 'row' id='content'>
+      <div class='large-12 columns'>
+        {% if page.title %}
+          <div class='row'>
+            <div class='large-12 columns'>
+              <h2 class='page-title'>{{ page.title }}</h2>
+            </div>
+          </div>
+        {% endif %}
+        {{ content }}
+      </div>
     </div>
-  </div>
+  </main>
   {% include footer.html %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script type="text/javascript" src="assets/javascripts/vendor/foundation.min.js"></script>
   <script type="text/javascript" src="assets/javascripts/vendor/what-input.js"></script>
   <script type="text/javascript" src="assets/javascripts/main.js?{{site.time | date: '%s%N'}}"></script>
 </body>
+</html>

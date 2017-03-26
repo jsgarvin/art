@@ -3,21 +3,21 @@
   background: url("../images/webbanner.png") no-repeat center;
   background-size: cover;
   height: 20rem;
-	#header-filler {
+  #header-filler {
     height: 16rem;
-	}
-	h1.banner-title {
+  }
+  h1.banner-title {
     text-shadow: 1px 1px #f77;
-		font-family: 'Italianno', serif;
-		font-size: 15rem;
-	}
-	h1.little-banner-title {
+    font-family: 'Italianno', serif;
+    font-size: 15rem;
+ }
+ h1.little-banner-title {
     display: none;
     color: #ddd;
     text-shadow: 2px 2px 2px #f11;
-		font-family: 'Italianno', serif;
-		font-size: 3.3rem;
-	}
+    font-family: 'Italianno', serif;
+    font-size: 3.3rem;
+  }
   .top-bar-title { height: 3rem; }
 }
 
@@ -44,3 +44,7 @@
   background-size: cover;
 }
 
+
+footer {
+  .license { float: right }
+}
