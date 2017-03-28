@@ -7,3 +7,8 @@ $('#authenticity-tabs').on('change.zf.tabs', function() {
   sticky_image.foundation('_calc', true);
   sticky_image.css('top', 0);
 });
+
+function openAuthenticityTab(tab) {
+  $("#authenticity-tabs").foundation("selectTab", tab);
+  window.scrollTo(0, 0);
+}
