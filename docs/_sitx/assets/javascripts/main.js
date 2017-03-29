@@ -12,10 +12,3 @@ function openAuthenticityTab(tab) {
   $("#authenticity-tabs").foundation("selectTab", tab);
   window.scrollTo(0, 0);
 }
-
-$('table#limited-edition-prints-register tbody td a.x-pigment-link').on('click', function() {
- $('div#pigmentModal img#pigmentImg').attr('src', 'assets/images/pigment_marks/'+this.dataset.serial+'.jpg')
- $('div#pigmentModal a#pigmentImgLink').attr('href', 'assets/images/pigment_marks/'+this.dataset.serial+'.jpg')
- $('div#pigmentModal span#printTitle').text(this.dataset.title)
- $('div#pigmentModal span#printSerial').text(this.dataset.serial)
-});

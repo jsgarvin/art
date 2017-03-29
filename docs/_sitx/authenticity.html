@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GarvinArt - Authenticity Protection</title>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css?1490757571385063033">
+  <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Italianno">
+</head>
+<body class='default-layout'>
+  <header id="header" class="header">
+  <div id='header-filler'>
+    <h1 class='banner-title'><a href="/">GarvinArt.com</a></h1>
+  </div>
+	<div data-sticky-container>
+    <div data-sticky data-margin-top='0' data-top-anchor="header div#header-filler:bottom" data-btm-anchor="content:bottom" class="banner">
+      <div class="top-bar">
+        <div class="top-bar-title">
+          <h1 class='little-banner-title'><a href="/">GarvinArt.com</a></h1>
+        </div>
+        <div class="top-bar-right">
+          <nav>
+            <ul class="menu">
+              <li><a href="/">About Me</a></li>
+              <li><a href="shop-soon">Shop</a></li>
+              <li><a href="authenticity">Authenticity Protection</a></li>
+              <li><a href="register">Register</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <div class= 'row' id='content'>
+      <div class='large-12 columns'>
+        
+          <div class='row'>
+            <div class='large-12 columns'>
+              <h2 class='page-title'>Authenticity Protection</h2>
+            </div>
+          </div>
+        
+        <div class='row'>
+  <div class='large-12 columns'>
+    <ul id='authenticity-tabs' class="tabs" data-tabs id="authenticity-tabs" data-deep-link="true" data-deep-link-smudge='true'>
+      <li class="tabs-title is-active"><a href="#_" aria-selected="true">What?</a></li>
+      <li class="tabs-title"><a href="#why">Why?</a></li>
+      <li class="tabs-title"><a href="#cryptographic-signatures">Cryptographic Signatures</a></li>
+      <li class="tabs-title"><a href="#git-repo">Git Repository</a></li>
+      <li class="tabs-title"><a href="#pigment-marks">Pigment Marks</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="tabs-content" data-tabs-content="authenticity-tabs">
+  <div class="tabs-panel is-active" id="_">
+    <div class='row'>
+  <div class='large-6 columns'>
+    <p>Each of my limited edition prints come with several unusual features to
+       help complicate attempts at forgery, unauthorized reproductions, and
+       outright fakes, and aid in authenticity verification. They are...
+       
+       <ul>
+         <li>A cryptographic signature, in both plain text and encoded as a
+           machine readable QR code, on the back of each print which can be
+           independently verified by any cryptography expert and even most 
+           crypto-hobbyists.</li>
+         <li>Details of each print are recorded in a publicly accessible,
+           downloadable
+           <a href="https://github.com/jsgarvin/art" target="_blank">online git repository</a>,
+           which also includes the source for this website. Each update to the
+           repository is also
+           <a href="https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work" target="_blank">cryptographically signed</a>
+           to provide assurance that I, and only I, made that update.</li>
+         <li>A unique acrylic pigment mark next to the serial number on the
+             back of each limited edition print, photographed in high resolution
+             and recorded for posterity in the above mentioned git repository.</li>
+       </ul>
+       <p><a onclick="openAuthenticityTab('why');">Why?</a></p>
+    </p>
+  </div>
+  <div class='large-6 columns'>
+    <img src="/assets/images/circuit2.jpg" title='circuit board with electornic components'>
+  </div>
+</div>
+
+  </div>
+</div>
+
+   
+<div class="tabs-content" data-tabs-content="authenticity-tabs">
+  <div class="tabs-panel" id="why">
+    <div class='row'>
+  <div class='large-12 columns'><h3>Why?</h3></div>
+</div>
+<div class='row'>
+  <div class='large-6 columns' id='whyx'>
+    <p>An ongoing challenge in the art world is that of authenticity
+       of provenance, or verifying that a work of art was created by the
+       artist it claims to be by, and not a forgery or unauthorized reproduction.
+    </p>
+    <p>History is full of examples of people discovering that a work of art that
+       they paid a small fortune for is, in fact, a forgery and not worth near the
+       price paid.</p>
+
+    <p>There are many ways to attempt to verify the authenticity of a work of
+       art, but new technologies are making it easier and easier for forgers to
+       create fakes, and it's a virtual arms race for those in the business of
+       authenticating art to stay one step ahead.</p>
+
+    <p>I hold no delusions of grandeur that my prints will ever be so
+       valued by society that it will ever be worth a forger's time and
+       effort to produce &amp; sell copies. Countless artists
+       far more talented that I can ever hope to be have never been discovered,
+       their lovingly crafted work resold at garage sales to people that
+       had no idea the work was an original or even cared who the artist was.</p>
+       
+    <p>Never-the-less, I find the subject fascinating and can't help but think that
+       a little effort up front could potentially make the job a 
+       <strong>lot</strong> more difficult for potential forgers and copy-cats.</p>
+
+    <p>Furthermore, as a software engineer by profession with a fascination in
+       cryptography, I realized that there were some unique steps I could take to
+       protect my art and make it a little more difficult for someone to forge
+       copies of my prints.
+
+    <p>There is no procedure or tool to make a piece of art 100% forge proof. Given
+       sufficient time, resources, and motivation, a skilled forger can make copies
+       of a piece of art that could convince all but the most experienced and
+       skilled authenticity experts.</p>
+
+    <p>However, should anybody ever decide to try to make reproductions of any of
+       my limited edition prints, or create entirely new prints of photos I never
+       took, and slap my name on them to inflate the value, I hope to make the task
+       a bit harder for them.
+    </p>
+
+    <p><a onclick="openAuthenticityTab('cryptographic-signatures');">How?</a></p>
+  </div>
+  <div class='large-6 columns' data-sticky-container>
+    <div class="sticky" data-sticky data-anchor="whyx" data-margin-top='5'>
+      <img src="/assets/images/sparkles.jpg" title='sparkley jewlery'>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="tabs-panel" id="cryptographic-signatures">
+    <div class='row'>
+  <div class='large-12 columns'><h3>Cryptographic Signatures</h3></div>
+</div>
+
+<div class='row'>
+  <div class='large-6 columns' id='crypto-sig'>
+    <p>For each of my limited edition prints, I create a description of the print,
+       including the title, year, size, serial number, materials used, etc. I then
+       sign that description with my private key and include the full description
+       and signature on the back of the print, in both a plain text human readable
+       form, and in a machine readable (i.e. your smart phone) QR code. Since each
+       print description contains information that is 100% unique to that specific
+       print (i.e. the serial number), the signature on each print is also 100%
+       unique to that print.<p> 
+
+       <p>My public key is
+       <a href='http://pgp.mit.edu/pks/lookup?op=get&search=0xD2DEC6AA316B5CDD'>
+       published for the world</a> on major public keys servers 
+       (fingerprint: ED97 F43E 1D86 6D62 31BB  04AD D2DE C6AA 316B 5CDD).
+       Any cryptography expert, and most cryptography hobbyists, should be capable
+       of taking my public key, and the QR code on the back of any of my prints, 
+       and verifying that the signature matches.</p>
+
+    <div class='large-12 columns'><h3>Wait.. what?</h3></div>
+
+    <p>It is beyond the scope of this article to explain the concept
+       of cryptographic signatures in depth, but I'll provide links
+       at the end to further reading and tools for those that are interested.</p>
+
+    <p>For a grossly oversimplified analogy though, imagine a good old fashioned wax
+       seal. In the Middle Ages, aristocrats used wax seals to, among other things,
+       authenticate documents that they were signing. Everybody knew what Count
+       Geoffrey's seal looked like, so when you saw a document with his seal, you
+       could be reasonably sure that Geoffery had signed it.</p>
+
+    <p>Cryptographic signatures work similarly, except through the power of
+       math and prime numbers. Wait! Stay with me, I'll try to keep this short.</p>
+
+    <p>In this case, the stamp (the thing you press into the wax) is a pair of
+       really, really, really, big prime numbers. This pair of numbers is called
+       the "private key." Count Geoffery randomly selects a pair of huge prime
+       numbers, and then he keeps these prime numbers (his private key) very, very
+       secret.</p>
+
+    <p>To sign (or stamp) a piece of text, Geoffery runs the text, and his private
+       key (the prime numbers),
+       through a specially crafted mathematical algorithm, and it spits out a
+       long stream of what appears to be random letters, numbers and other symbols,
+       which is called the "signature".
+       It's not at all random though, and as crazy as this sounds, only that text,
+       and those prime numbers can produce that particular signature.</p>
+
+    <p>In our analogy, that stream of characters (the signature) represents the wax,
+       stamped with Count Geoffery's stamp, on the back of a letter, and allowed to
+       harden.  Anybody that receives that text, with that signature, can verify,
+       with mathematically certainty, that Count Geoffery signed it.</p>
+
+    <p>"But how?" you ask. Well, in addition to Count Geoffery's private key (the
+        two prime numbers), he also has what's called a "public key", which is
+        simply the two prime numbers multiplied together. Imagine if Geoffery's
+        private key was the prime numbers 17 and 47 (these aren't nearly long
+        enough in reality, but bear with me). Geoffery's public key then would
+        be 17 x 47, or 799.</p>
+
+    <p>There's no known way to figure out what two prime numbers were multiplied
+       together to get 799, other than just trying all of the possibilities, which
+       is why, other than for simplified explanations like this, Count Geoffery
+       would want really, really, really big prime numbers. So, Count Geoffery
+       can safely broadcast his public key (799) to the whole world and know that
+       his private key (17 and 47) is safe and secure.</p>
+
+    <p>Finally, to verify that a letter of admiration, claiming to be from Count
+       Geoffery, is really from him, Princess Carisa merely needs to 
+       run the text, the signature, and Geoffery's public key (799) through another
+       specially crafted mathematical algorithm, and the algorithm is able to
+       verify (through the magic of math) that the prime numbers used to generate
+       the public key were also
+       used to generate the not-so-random signature. If the verification passes,
+       Carisa knows that Geoffery's letter is genuine. But if it fails,
+       then the Pricness knows that somebody else is trying to impersonate Geoffery.
+       </p>
+       
+    <p>Further reading for the mathematically masochistic;
+     <ul>
+       <li><a href="https://en.wikipedia.org/wiki/Public-key_cryptography">Public Key Cryptography</a></li>
+       <li><a href="https://math.berkeley.edu/~kpmann/encryption.pdf">The Science of Encryption</a></li>
+       <li><a href="https://gnupg.org/">The GNU Privacy Guard</a></li>
+     </ul>
+    </p>
+  </div>
+  <div class='large-6 columns' data-sticky-container>
+    <div class="sticky" data-sticky data-stick-to='top' data-anchor="crypto-sig" data-margin-top='5'>
+      <img src="/assets/images/crypto-back-sample1.png">
+      <img src="/assets/images/keyhole.jpg" title="View through keyhole">
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="tabs-panel" id="git-repo">
+    <div class='row'>
+  <div class='large-6 columns'>
+    <p>Unique details (including a high resolution photo of the pigment mark
+       on the back) of each limited edition print are recorded in a publicly
+       accessible <a href="https://github.com/jsgarvin/art" target="_blank">online git repository</a>
+       to aid in authenticity verification.</p> 
+
+    <p>Each commit to the repository is
+       <a href="https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work" target="_blank")>signed</a>
+       with my public key (see the section on cryptographic signatures).<p>
+
+    <p>I currently maintain the repository on github, but on the off chance
+       that any of my prints outlast both myself and github, anybody familiar
+       with git (primarily software engineers like myself) can clone the
+       repository to their local machine right now and even upload it to
+       another git hosting service for long term safe keeping.</p>
+
+    <p>Since each commit is signed with my public key, anybody sufficiently
+       familiar with git and cryptography will be able to verify that the
+       details on each print were submitted by me, and not by someone that
+       cloned and then modified the commit history. </p>
+  </div>
+  <div class='large-6 columns'>
+    <img src="/assets/images/rgbpixels.jpg" title="RGB pixels on monitor">
+  </div>
+</div>
+
+
+  </div>
+  <div class="tabs-panel" id="pigment-marks">
+    <div class='row'>
+  <div class='large-6 columns'>
+    <p>Within the description on the back of each limited edition print,
+       in close proximity to the serial number, I add a unique
+       mark of acrylic paint.</p>
+
+    <p>After allowing it time to dry, I take a high resolution macro photograph
+       of the mark and include the photo with the details of the print in the
+       online git repository as a permanent record associating that serial
+       number with that unique mark of paint.</p>
+
+    <p>It is my intent to make these marks nearly impossible to copy
+       and reproduce. The photos are of high enough resolution that microscopic
+       details in how the pigment attached to the paper, and even the cotton
+       fibers in the paper itself, are readily visible.</p>
+    
+    <p>Feel free to click on the sample on the right, and then zoom in.</p>
+
+    <p>As long as they properly verify the source of the photo of the mark, any
+       qualified art authenticity expert should be able to use a strong
+       magnifying glass or microscope and compare the image to the actual mark
+       and confirm with relative ease that they are identical, or that the 
+       print is a forgery.</p>
+
+    <p>I believe that creating a sufficiently perfect replica of the pigment
+       mark purely by hand would be impossible for even the most skilled
+       counterfeiter. One might optimistically argue that eventually 3D
+       printers may achieve the resolution necessary to accomplish the task.
+       I highly doubt that, but authenticators can also check the positions of
+       the cotton fibers in the paper itself.<p>
+  </div>
+  <div class='large-6 columns'>
+    <a href="/assets/images/pigment-demo.jpg">
+      <img src="/assets/images/pigment-demo.jpg" title="sample pigment mark">
+    </a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+  </main>
+  <footer>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <small>
+        <div class='copyright'>&copy; 2017 Jonathan Garvin</div>
+      </small>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/vendor/foundation.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/vendor/what-input.js"></script>
+  <script type="text/javascript" src="assets/javascripts/main.js?1490757571385063033"></script>
+</body>
+</html>

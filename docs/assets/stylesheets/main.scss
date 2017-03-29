@@ -3,7 +3,9 @@
 ---
 
 @import "_vendor/foundation/foundation";
+@import "_vendor/font-awesome-4.7.0/scss/font-awesome";
 @import "header_n_footer";
 @import "default_layout";
+@import "register";
 
 @include foundation-everything;

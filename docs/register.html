@@ -1,0 +1,45 @@
+---
+layout: default
+title: Print Register
+---
+<div class= 'row' id='content'>
+  <div class='large-12 columns'>
+    <table id='limited-edition-prints-register'>
+      <thead>
+        <tr>
+          <th>Serial#</th>
+          <th>Title</th>
+          <th>Edition#</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for print in site.data.limited_edition_prints %}
+          <tr>
+            <td>
+              {% if print.pigment_mark_loaded %}
+                {{ print.serial }} <a href="#" class='x-pigment-link' data-serial="{{ print.serial }}" data-title="{{ print.title }}" data-open="pigmentModal"><i class="fa fa-paint-brush"></i></a>
+              {% else %}
+                {{ print.serial }}
+              {% endif %}
+            </td>
+            <td>{{ print.title }}</td>
+            <td>{{ print.edition_number }}/{{ print.edition_size }}</td>
+            <td>{{ print.status }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+<div id="pigmentModal" class="reveal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Pigment Mark</h2>
+  <h3>"<span id='printTitle'></span>", Serial#: <span id='printSerial'></span></h3>
+  <p><a href="http://localhost:4000/authenticity#pigment-marks">What is this?</a>
+  <a id='pigmentImgLink' href="" target="_blank"><i class="fa fa-search-plus fa-flip-horizontal"></i></a>
+  <img id='pigmentImg' src="">
+  <a class="close-button" data-close aria-label="Close" type='button'>&#215;</a>
+</div>
