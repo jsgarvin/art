@@ -10,23 +10,25 @@ title: Print Register
           <th>Serial#</th>
           <th>Title</th>
           <th>Edition#</th>
-          <th>Status</th>
+          <th>Printed</th>
         </tr>
       </thead>
       <tbody>
         {% for print in site.data.limited_edition_prints %}
-          <tr>
-            <td>
-              {% if print.pigment_mark_loaded %}
-                {{ print.serial }} <a href="#" class='x-pigment-link' data-serial="{{ print.serial }}" data-title="{{ print.title }}" data-open="pigmentModal"><i class="fa fa-paint-brush"></i></a>
-              {% else %}
-                {{ print.serial }}
-              {% endif %}
-            </td>
-            <td>{{ print.title }}</td>
-            <td>{{ print.edition_number }}/{{ print.edition_size }}</td>
-            <td>{{ print.status }}</td>
-          </tr>
+          {% if print.printed_date %}
+            <tr>
+              <td>
+                {% if print.pigment_mark_loaded %}
+                  {{ print.serial }} <a href="#" class='x-pigment-link' data-serial="{{ print.serial }}" data-title="{{ print.title }}" data-open="pigmentModal"><i class="fa fa-paint-brush"></i></a>
+                {% else %}
+                  {{ print.serial }}
+                {% endif %}
+              </td>
+              <td>{{ print.title }}</td>
+              <td>{{ print.edition_number }}/{{ print.edition_size }}</td>
+              <td>{{ print.printed_date }}</td>
+            </tr>
+          {% endif %}
         {% endfor %}
       </tbody>
     </table>
