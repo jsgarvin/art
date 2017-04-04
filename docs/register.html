@@ -9,6 +9,7 @@ title: Print Register
         <tr>
           <th>Serial#</th>
           <th>Title</th>
+          <th>Size</th>
           <th>Edition#</th>
           <th>Printed</th>
         </tr>
@@ -16,6 +17,7 @@ title: Print Register
       <tbody>
         {% for print in site.data.limited_edition_prints %}
           {% if print.printed_date %}
+            {% assign edition = site.data.limited_editions[print.edition] %}
             <tr>
               <td>
                 {% if print.pigment_mark_loaded %}
@@ -24,8 +26,9 @@ title: Print Register
                   {{ print.serial }}
                 {% endif %}
               </td>
-              <td>{{ print.title }}</td>
-              <td>{{ print.edition_number }}/{{ print.edition_size }}</td>
+              <td>{{ edition.title }}</td>
+              <td>{{ edition.print_size }}</td>
+              <td>{{ print.edition_number }}/{{ edition.size }}</td>
               <td>{{ print.printed_date }}</td>
             </tr>
           {% endif %}

@@ -1,104 +1,85 @@
 - serial: 1
-  title: Gerber Petals 1
+  edition: gerbera_petals_1_13x19
   edition_number: 1
-  edition_size: 10
   printed_date: 03/27/2017
   pigment_mark_loaded: true
 
 - serial: 2
-  title: Gerber Petals 1
+  edition: gerbera_petals_1_13x19
   edition_number: 2
-  edition_size: 10
+  printed_date: 04/03/2017
 
 - serial: 3
-  title: Gerber Petals 1
+  edition: gerbera_petals_1_13x19
   edition_number: 3
-  edition_size: 10
 
 - serial: 4
-  title: Gerber Petals 1
+  edition: gerbera_petals_1_13x19
   edition_number: 4
-  edition_size: 10
 
 - serial: 5
-  title: Gerber Petals 1
+  edition: gerbera_petals_1_13x19
   edition_number: 5
-  edition_size: 10
 
 - serial: 6
-  title: Gerber Petals 1
+  edition: gerbera_petals_1_13x19
   edition_number: 6
-  edition_size: 10
 
 - serial: 7
-  title: Gerber Petals 1
+  edition: gerbera_petals_1_13x19
   edition_number: 7
-  edition_size: 10
 
 - serial: 8
-  title: Gerber Petals 1
+  edition: gerbera_petals_1_13x19
   edition_number: 8
-  edition_size: 10
 
 - serial: 9
-  title: Gerber Petals 1
+  edition: gerbera_petals_1_13x19
   edition_number: 9
-  edition_size: 10
 
 - serial: 10
-  title: Gerber Petals 1
+  edition: gerbera_petals_1_13x19
   edition_number: 10
-  edition_size: 10
 
 - serial: 11
-  title: One In A Crowd
+  edition: one_in_a_crowd_13x19
   edition_number: 1
-  edition_size: 10
   printed_date: 04/02/2017
   pigment_mark_loaded: true
 
 - serial: 12
-  title: One In A Crowd
+  edition: one_in_a_crowd_13x19
   edition_number: 2
-  edition_size: 10
 
 - serial: 13
-  title: One In A Crowd
+  edition: one_in_a_crowd_13x19
   edition_number: 3
-  edition_size: 10
 
 - serial: 14
-  title: One In A Crowd
+  edition: one_in_a_crowd_13x19
   edition_number: 4
-  edition_size: 10
 
 - serial: 15
-  title: One In A Crowd
+  edition: one_in_a_crowd_13x19
   edition_number: 5
-  edition_size: 10
 
 - serial: 16
-  title: One In A Crowd
+  edition: one_in_a_crowd_13x19
   edition_number: 6
-  edition_size: 10
 
 - serial: 17
-  title: One In A Crowd
+  edition: one_in_a_crowd_13x19
   edition_number: 7
-  edition_size: 10
 
 - serial: 18
-  title: One In A Crowd
+  edition: one_in_a_crowd_13x19
   edition_number: 8
-  edition_size: 10
 
 - serial: 19
-  title: One In A Crowd
+  edition: one_in_a_crowd_13x19
   edition_number: 9
-  edition_size: 10
 
 - serial: 20
-  title: One In A Crowd
+  edition: one_in_a_crowd_13x19
   edition_number: 10
-  edition_size: 10
 
